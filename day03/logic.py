@@ -23,8 +23,8 @@ def gen_with_twelve_constraint(arr: List[int]) -> int:
     n = len(arr)
 
     def can_process(idx: int) -> bool:
-        already_choosen = len(st)
-        lft = BASE - already_choosen
+        already_chosen = len(st)
+        lft = BASE - already_chosen
         candidate = n - idx
         return candidate > lft
 
