@@ -1,5 +1,4 @@
 from typing import List
-from collections import deque
 
 
 def build_pool(grid: List[str]) -> dict:
