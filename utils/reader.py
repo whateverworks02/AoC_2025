@@ -6,6 +6,11 @@ def read_file_as_lines(file_path: str) -> List[str]:
         return [line.strip() for line in f if line.strip()]
 
 
+def read_original_file_as_lines(file_path: str) -> List[str]:
+    with open(file_path, "r") as f:
+        return f.read().splitlines()
+
+
 def read_single_line(file_path: str) -> str:
     with open(file_path, "r") as f:
         return f.readline().strip()
