@@ -39,7 +39,7 @@ def cal_distance(fir: List[int], sec: List[int]) -> int:
 def part1(grid: List[List[int]], steps: int) -> int:
     n = len(grid)
     pq = []
-    for i in range(n):
+    for i in range(n - 1):
         fir = grid[i]
         for j in range(i + 1, n):
             sec = grid[j]
@@ -58,7 +58,7 @@ def part1(grid: List[List[int]], steps: int) -> int:
 def part2(grid: List[List[int]]) -> int:
     n = len(grid)
     pq = []
-    for i in range(n):
+    for i in range(n - 1):
         fir = grid[i]
         for j in range(i + 1, n):
             sec = grid[j]

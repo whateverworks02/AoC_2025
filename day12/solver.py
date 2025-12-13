@@ -1,6 +1,5 @@
 import os
 from utils.reader import read_file_as_lines
-from .logic import *
 
 if __name__ == "__main__":
     script_dir = os.path.dirname(__file__)
